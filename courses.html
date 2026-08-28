@@ -3,210 +3,241 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Courses — Foothold Digital Skills Bootcamp</title>
-<meta name="description" content="Four 12-week tracks: Web Development, Digital Marketing, IT Support, and UX &amp; Product Design. See what you'll learn and the jobs each track leads to.">
+<title>SkillBridge | Courses</title>
+<meta name="description" content="Browse SkillBridge's free digital skills tracks and apply — graphic design, coding, digital marketing, IT support, UI/UX, and cybersecurity.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
 
-<header class="site-header">
-  <div class="container nav">
-    <a class="wordmark" href="index.html">Foot<span>hold</span></a>
-    <nav aria-label="Primary">
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="courses.html" aria-current="page">Courses</a></li>
-        <li><a href="apply.html">Apply</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-    <div class="nav-actions">
-      <a class="btn btn-primary desktop-only" href="apply.html">Apply now</a>
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span>
-      </button>
+<header>
+  <nav class="wrap">
+    <a href="index.html" class="brand">
+      <svg viewBox="0 0 32 32" fill="none">
+        <rect x="2" y="2" width="28" height="28" rx="8" fill="#2F6FED"/>
+        <path d="M10 20L15 11L19 17L22 12" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="22" cy="12" r="2" fill="#3ED6C8"/>
+      </svg>
+      SKILLBRIDGE
+    </a>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="courses.html" class="active">Courses</a>
+      <a href="courses.html#register">Apply</a>
     </div>
-  </div>
+    <button class="cart-btn" id="drawerToggle">TRACKS · <span id="trackCount">0</span></button>
+  </nav>
 </header>
 
-<main id="main">
+<section class="page-hero">
+  <div class="wrap">
+    <div class="eyebrow eyebrow-light">CHOOSE YOUR PATH</div>
+    <h1 class="page-h1">THE TRACKS</h1>
+    <p class="page-sub">Six in-demand digital skills. Add the ones you're interested in, then apply below.</p>
+  </div>
+</section>
 
-  <div class="page-header container">
-    <p class="eyebrow">Four tracks, one format</p>
-    <h1>Choose the track that matches the job you want.</h1>
-    <p class="lede">Every track runs 12 weeks, full-time, in the same cohort structure — live instruction in the morning, project work in the afternoon, and a real client or capstone project in week 10 through 12.</p>
+<section class="courses">
+  <div class="wrap">
+    <div class="grid" id="courseGrid">
+
+      <div class="course-card" data-course="Graphic Design Fundamentals">
+        <div class="course-icon icon-blue">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="8" cy="8" r="4" stroke="#2F6FED" stroke-width="1.6"/><circle cx="16" cy="16" r="4" stroke="#2F6FED" stroke-width="1.6"/><path d="M8 12v4a4 4 0 0 0 4 4h4" stroke="#2F6FED" stroke-width="1.6"/></svg>
+        </div>
+        <div class="tag-row">
+          <span class="tag tag-blue">Beginner</span>
+          <span class="tag tag-outline">8 weeks</span>
+        </div>
+        <h3>Graphic Design Fundamentals</h3>
+        <p class="desc">Photoshop, Illustrator, and Canva basics — typography, color, and branding. Finish with a personal portfolio.</p>
+        <button class="add-btn">ADD TO MY TRACKS</button>
+      </div>
+
+      <div class="course-card" data-course="Web Development & Coding">
+        <div class="course-icon icon-coral">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M8 8L3 12L8 16" stroke="#FF6B4A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 8L21 12L16 16" stroke="#FF6B4A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 5L10 19" stroke="#FF6B4A" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <div class="tag-row">
+          <span class="tag tag-coral">Beginner–Intermediate</span>
+          <span class="tag tag-outline">12 weeks</span>
+        </div>
+        <h3>Web Development & Coding</h3>
+        <p class="desc">HTML, CSS, JavaScript, and an intro to Python. Build three real projects you can show employers.</p>
+        <button class="add-btn">ADD TO MY TRACKS</button>
+      </div>
+
+      <div class="course-card" data-course="Digital Marketing">
+        <div class="course-icon icon-cyan">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M3 11L12 4L21 11" stroke="#0D9C8E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 10V19H19V10" stroke="#0D9C8E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 19V14H14V19" stroke="#0D9C8E" stroke-width="1.6"/></svg>
+        </div>
+        <div class="tag-row">
+          <span class="tag tag-cyan">Beginner</span>
+          <span class="tag tag-outline">6 weeks</span>
+        </div>
+        <h3>Digital Marketing</h3>
+        <p class="desc">Social media strategy, SEO basics, content creation, and how to run a first ad campaign.</p>
+        <button class="add-btn">ADD TO MY TRACKS</button>
+      </div>
+
+      <div class="course-card" data-course="IT Support & Networking">
+        <div class="course-icon icon-blue">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="12" rx="1.5" stroke="#2F6FED" stroke-width="1.6"/><path d="M8 20h8M12 16v4" stroke="#2F6FED" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <div class="tag-row">
+          <span class="tag tag-blue">Beginner</span>
+          <span class="tag tag-outline">8 weeks</span>
+        </div>
+        <h3>IT Support & Networking</h3>
+        <p class="desc">Troubleshooting, networking fundamentals, and help-desk skills — prep for entry-level IT certifications.</p>
+        <button class="add-btn">ADD TO MY TRACKS</button>
+      </div>
+
+      <div class="course-card" data-course="UI/UX Design">
+        <div class="course-icon icon-coral">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="18" rx="2" stroke="#FF6B4A" stroke-width="1.6"/><path d="M8 8h8M8 12h8M8 16h5" stroke="#FF6B4A" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <div class="tag-row">
+          <span class="tag tag-coral">Beginner</span>
+          <span class="tag tag-outline">6 weeks</span>
+        </div>
+        <h3>UI/UX Design</h3>
+        <p class="desc">Wireframing, prototyping in Figma, and the basics of user research — design your first app screen.</p>
+        <button class="add-btn">ADD TO MY TRACKS</button>
+      </div>
+
+      <div class="course-card" data-course="Cybersecurity Fundamentals">
+        <div class="course-icon icon-cyan">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 3L20 6V11C20 16 16.5 19.5 12 21C7.5 19.5 4 16 4 11V6L12 3Z" stroke="#0D9C8E" stroke-width="1.6" stroke-linejoin="round"/><path d="M9.5 12L11.3 13.8L14.8 10.2" stroke="#0D9C8E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="tag-row">
+          <span class="tag tag-cyan">Beginner</span>
+          <span class="tag tag-outline">6 weeks</span>
+        </div>
+        <h3>Cybersecurity Fundamentals</h3>
+        <p class="desc">Core security concepts, safe practices, and an intro to how businesses protect their data.</p>
+        <button class="add-btn">ADD TO MY TRACKS</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="register" id="register">
+  <div class="wrap register-grid">
+    <div class="register-info">
+      <div class="eyebrow">APPLY NOW</div>
+      <h2>Start your application</h2>
+      <p>Applications are reviewed on a rolling basis. It takes less than five minutes — no CV required.</p>
+      <ul class="checklist">
+        <li>Ages 18–29, unemployed or underemployed</li>
+        <li>No prior experience needed for any track</li>
+        <li>Free of cost — no hidden fees</li>
+        <li>Laptop / lab access provided during sessions</li>
+      </ul>
+      <div id="selectedTracksNote" class="selected-note" hidden>
+        <span class="eyebrow">FROM YOUR TRACKS LIST</span>
+        <div id="selectedTracksChips" class="chips"></div>
+      </div>
+    </div>
+
+    <form class="register-form" id="registerForm" novalidate>
+      <div class="form-row">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" required placeholder="Your full name">
+      </div>
+      <div class="form-row form-row-half">
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com">
+        </div>
+        <div>
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required placeholder="e.g. 010 123 4567">
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="courseSelect">Select a Track</label>
+        <select id="courseSelect" name="course" required>
+          <option value="" disabled selected>Choose a track</option>
+          <option>Graphic Design Fundamentals</option>
+          <option>Web Development & Coding</option>
+          <option>Digital Marketing</option>
+          <option>IT Support & Networking</option>
+          <option>UI/UX Design</option>
+          <option>Cybersecurity Fundamentals</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="why">Why do you want to join? <span class="optional">(optional)</span></label>
+        <textarea id="why" name="why" rows="3" placeholder="Tell us a bit about your goals..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-full">SUBMIT APPLICATION</button>
+      <p class="form-note">This is a student demo project — applications are saved in your browser only, not sent anywhere.</p>
+    </form>
   </div>
 
-  <!-- WEB DEVELOPMENT -->
-  <section class="container" id="web-development">
-    <div class="course">
-      <div class="course-meta">
-        <strong>Track 01</strong>
-        Web Development
-        <span>12 weeks · full-time</span>
-        <span>Cohorts of 18–22</span>
-        <span>Entry-level, no coding background needed</span>
-      </div>
-      <div>
-        <h3>Web Development</h3>
-        <p>You'll go from your first line of code to a deployed, working website — built the way small agencies and in-house teams actually work.</p>
-        <ul class="skill-list">
-          <li>HTML5 &amp; semantic markup</li>
-          <li>CSS layout, Flexbox &amp; Grid</li>
-          <li>JavaScript fundamentals</li>
-          <li>Git &amp; GitHub workflows</li>
-          <li>Responsive, mobile-first design</li>
-          <li>Working with a design handoff</li>
-          <li>Debugging &amp; browser dev tools</li>
-          <li>Deploying a live site</li>
-        </ul>
-        <p class="outcome-line"><strong>Typical roles after graduation:</strong> Junior Web Developer, Front-End Support, Website Coordinator.</p>
-      </div>
+  <div class="wrap">
+    <div class="my-registrations" id="myRegistrations" hidden>
+      <div class="eyebrow">SUBMITTED APPLICATIONS (this browser)</div>
+      <div id="registrationsList" class="reg-list"></div>
+      <button class="link-btn" id="clearRegistrations">Clear all</button>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- DIGITAL MARKETING -->
-  <section class="container" id="digital-marketing">
-    <div class="course">
-      <div class="course-meta">
-        <strong>Track 02</strong>
-        Digital Marketing
-        <span>12 weeks · full-time</span>
-        <span>Cohorts of 18–22</span>
-        <span>Entry-level, no coding background needed</span>
+<footer>
+  <div class="wrap footer-top">
+    <div>
+      <div class="brand-f">
+        <svg viewBox="0 0 32 32" fill="none">
+          <rect x="2" y="2" width="28" height="28" rx="8" fill="#2F6FED"/>
+          <path d="M10 20L15 11L19 17L22 12" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="22" cy="12" r="2" fill="#3ED6C8"/>
+        </svg>
+        SKILLBRIDGE
       </div>
-      <div>
-        <h3>Digital Marketing</h3>
-        <p>You'll plan, launch, and measure real campaigns — the exact skill set small and mid-size businesses hire for first.</p>
-        <ul class="skill-list">
-          <li>SEO fundamentals</li>
-          <li>Paid social campaigns</li>
-          <li>Email marketing &amp; automation</li>
-          <li>Content calendars &amp; copywriting</li>
-          <li>Analytics &amp; reporting dashboards</li>
-          <li>Brand voice &amp; audience research</li>
-          <li>Budget basics &amp; ad spend tracking</li>
-          <li>Client presentation skills</li>
-        </ul>
-        <p class="outcome-line"><strong>Typical roles after graduation:</strong> Marketing Coordinator, Social Media Assistant, SEO Associate.</p>
-      </div>
+      <p class="note">A free digital skills bootcamp helping unemployed youth build careers in design, code, marketing, and IT.</p>
     </div>
-  </section>
-
-  <!-- IT SUPPORT -->
-  <section class="container" id="it-support">
-    <div class="course">
-      <div class="course-meta">
-        <strong>Track 03</strong>
-        IT Support
-        <span>12 weeks · full-time</span>
-        <span>Cohorts of 18–22</span>
-        <span>Entry-level, no coding background needed</span>
-      </div>
-      <div>
-        <h3>IT Support</h3>
-        <p>You'll build the troubleshooting instincts and ticketing discipline that help desks and IT teams rely on every day.</p>
-        <ul class="skill-list">
-          <li>Hardware &amp; OS troubleshooting</li>
-          <li>Networking fundamentals</li>
-          <li>Help-desk ticketing systems</li>
-          <li>Account &amp; access management</li>
-          <li>Customer communication under pressure</li>
-          <li>Basic cybersecurity hygiene</li>
-          <li>Windows &amp; macOS support</li>
-          <li>Documentation &amp; knowledge bases</li>
-        </ul>
-        <p class="outcome-line"><strong>Typical roles after graduation:</strong> Help Desk Technician, IT Support Associate, Desktop Support.</p>
-      </div>
+    <div>
+      <h5>Program</h5>
+      <ul>
+        <li><a href="courses.html">All Tracks</a></li>
+        <li><a href="index.html#how">How It Works</a></li>
+        <li><a href="courses.html#register">Apply Now</a></li>
+      </ul>
     </div>
-  </section>
-
-  <!-- UX / PRODUCT DESIGN -->
-  <section class="container" id="ux-design">
-    <div class="course">
-      <div class="course-meta">
-        <strong>Track 04</strong>
-        UX &amp; Product Design
-        <span>12 weeks · full-time</span>
-        <span>Cohorts of 18–22</span>
-        <span>Entry-level, no design background needed</span>
-      </div>
-      <div>
-        <h3>UX &amp; Product Design</h3>
-        <p>You'll learn to turn a real problem into a tested, working prototype — and build the portfolio that gets junior design roles noticed.</p>
-        <ul class="skill-list">
-          <li>User research &amp; interviews</li>
-          <li>Wireframing &amp; prototyping in Figma</li>
-          <li>Information architecture</li>
-          <li>Usability testing</li>
-          <li>Design systems basics</li>
-          <li>Accessibility fundamentals</li>
-          <li>Presenting &amp; defending design decisions</li>
-          <li>Building a portfolio case study</li>
-        </ul>
-        <p class="outcome-line"><strong>Typical roles after graduation:</strong> Junior Product Designer, UX Research Assistant, Design Coordinator.</p>
-      </div>
+    <div>
+      <h5>Legal</h5>
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+        <li><a href="mailto:hello@skillbridge.example">Contact</a></li>
+      </ul>
     </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="container">
-    <div class="cta-banner">
-      <div>
-        <h2>Not sure which track fits?</h2>
-        <p>The application includes a short track-matching call — no need to decide today.</p>
-      </div>
-      <div class="cta-actions">
-        <a class="btn btn-primary" href="apply.html">Apply now</a>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a class="wordmark" href="index.html">Foot<span>hold</span></a>
-        <p>A tuition-free digital skills bootcamp helping unemployed young people train for, and land, their next job.</p>
-      </div>
-      <div class="footer-col">
-        <h5>Program</h5>
-        <ul>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="apply.html">Apply</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Contact</h5>
-        <ul>
-          <li><a href="mailto:hello@foothold.example">hello@foothold.example</a></li>
-          <li><a href="tel:+10000000000">(000) 000-0000</a></li>
-          <li>123 Main Street, Suite 4<br>Your City, ST 00000</li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Follow</h5>
-        <ul>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">TikTok</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 Foothold. All rights reserved.</span>
-      <span>Placeholder content — customize before launch.</span>
-    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© 2026 SkillBridge Inc.</span>
+    <span>A fictional program created for a college coursework project.</span>
   </div>
 </footer>
+
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<aside class="drawer" id="drawer">
+  <div class="drawer-head">
+    <h3>MY SELECTED TRACKS</h3>
+    <button id="drawerClose" aria-label="Close">×</button>
+  </div>
+  <div class="drawer-list" id="drawerList"></div>
+  <div class="drawer-footer">
+    <div class="drawer-total">Tracks selected: <strong id="drawerTotal">0</strong></div>
+    <a href="courses.html#register" class="btn btn-primary btn-full">CONTINUE TO APPLICATION</a>
+  </div>
+</aside>
+
+<div class="toast" id="toast">Added to your tracks</div>
 
 <script src="script.js"></script>
 </body>
 </html>
-
